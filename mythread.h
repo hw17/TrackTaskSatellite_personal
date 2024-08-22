@@ -1,13 +1,9 @@
 #ifndef MYTHREAD_H
 #define MYTHREAD_H
 
-#pragma once
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <ctime>
-#include <iomanip>
+#include "classClient.h"
 
-void taskloop(void); 
+void thread_readValues(TCPClient argClient, int socketNum);
+void thread_printValues(void);
 
 #endif /* MYTHREAD_H */
