@@ -1,12 +1,13 @@
 # TrackTaskSatellite_personal
 This repo is to track my changes for the task
 
+## TASK 1
 to generate client1 exe in Terminal:
 ```
 g++ -std=c++17 client.cpp classClient.cpp time.cpp thread.cpp -o client1
 ```
 
-to execute:
+to execute it:
 ```
 ./client1
 ```
@@ -20,7 +21,28 @@ The output in terminal currently is:
 {"timestamp": 1724343098474, "out1": "5.0", "out2": "3.0", "out3": "5.0"},
 ...
 ```
+## TASK 2
+to generate client2 exe in Terminal:
+```
+g++ -std=c++17 -D C2_TIME client.cpp classClient.cpp time.cpp thread.cpp -o client2
+```
+to execute it:
+```
+./client2
+```
+The output in terminal currently is (it should be a diffence of 20ms in each output):
+```
+...
+{"timestamp": 1724427218107, "out1": "-2.5", "out2": "--", "out3": "--"},
+{"timestamp": 1724427218127, "out1": "-2.9", "out2": "--", "out3": "--"},
+{"timestamp": 1724427218152, "out1": "-3.3", "out2": "-1.0", "out3": "--"},
+{"timestamp": 1724427218178, "out1": "-3.6", "out2": "-1.0", "out3": "--"},
+{"timestamp": 1724427218200, "out1": "-3.6", "out2": "-1.0", "out3": "--"},
+{"timestamp": 1724427218225, "out1": "-4.0", "out2": "-1.0", "out3": "--"},
+...
+```
 
+## HOW TO SEE THE PLOT
 The graph in python 
 ![Figure_1](https://github.com/user-attachments/assets/efb8e42e-6956-4d6f-a865-56454ac5e23d)
 
