@@ -7,7 +7,7 @@ to generate client1 exe in Terminal:
 g++ -std=c++17 *.cpp -o client1
 ```
 
-to execute it:
+to execute task 1 exe:
 ```
 ./client1
 ```
@@ -28,7 +28,9 @@ g++ -std=c++17 -D C2_TIME *.cpp -o client2
 ```
 > [!NOTE]
 > **C2_TIME** will change from 100ms to 20ms
-to execute it:
+
+
+to execute task 2 exe:
 ```
 ./client2
 ```
