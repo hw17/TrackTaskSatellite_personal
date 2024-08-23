@@ -67,8 +67,7 @@ std::string TCPClient::sreadValue(void){
                      BUFSIZ,
                      0);
     
-    if(addsockfd < 1)
-    {
+    if(SOCKETFD_FAILED == addsockfd){
         //close connection to client
         close(sockfd);
         //return in case 
@@ -84,4 +83,19 @@ std::string TCPClient::sreadValue(void){
     }
 
     return tmp;
+}
+
+void TCPClient::controlServer(void){
+    std::string sbuffer(BUFSIZ, 0);
+    ssize_t status {0};
+    
+    // send the string
+	status = write(sockfd,
+                   sbuffer.data(),
+                   sbuffer.length());
+
+	if(SOCKETFD_FAILED == status){
+		perror("Send failed");
+		exit(1);
+	}
 }

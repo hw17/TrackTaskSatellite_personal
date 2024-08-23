@@ -26,10 +26,10 @@ public:
     TCPClient(char *port);
     TCPClient(char *port, char *server);
     ~TCPClient();
-
     void configConnection(char *port, char *server);
     void connectInit(void);
     std::string sreadValue(void);
+    void controlServer(void);
 };
 
 #endif /* CLASSCLIENT_H */

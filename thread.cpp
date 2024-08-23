@@ -23,7 +23,7 @@ void thread_readValues(TCPClient argClient, int socketNum){
 
 void thread_printValues(void){
     while (true) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(PERIOD_MS));
 
         // Lock to avoid corruption in data while printing
         std::lock_guard<std::mutex> lock(mtx);
