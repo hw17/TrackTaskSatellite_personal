@@ -4,7 +4,7 @@ This repo is to track my changes for the task
 ## TASK 1
 to generate client1 exe in Terminal:
 ```
-g++ -std=c++17 client.cpp classClient.cpp time.cpp thread.cpp -o client1
+g++ -std=c++17 *.cpp -o client1
 ```
 
 to execute it:
@@ -24,8 +24,10 @@ The output in terminal currently is:
 ## TASK 2
 to generate client2 exe in Terminal:
 ```
-g++ -std=c++17 -D C2_TIME client.cpp classClient.cpp time.cpp thread.cpp -o client2
+g++ -std=c++17 -D C2_TIME *.cpp -o client2
 ```
+> [!NOTE]
+> **C2_TIME** will change from 100ms to 20ms
 to execute it:
 ```
 ./client2
